@@ -6,7 +6,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-image: url("images/snow.jpg");
+    background-image: url("images/mirsari.jpg");
     min-height: 100vh;
     background-size: cover;
     background-position: center;
@@ -24,6 +24,10 @@ h1{
 }
 .count-down-container{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 2rem;
 }
 
 .big-text{
