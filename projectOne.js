@@ -16,10 +16,10 @@ function countDown(){
     const seconds = Math.floor(totalSeconds)% 60;
 
     
-    daysElement.innerHTML = days;
-    hoursElement.innerHTML = hours;
-    minutesElement.innerHTML = minutes;
-    secondsElement.innerHTML = seconds;
+    daysElement.innerHTML =  formateTime(days);
+    hoursElement.innerHTML =  formateTime(hours);
+    minutesElement.innerHTML =  formateTime(minutes);
+    secondsElement.innerHTML =  formateTime(seconds);
 
 console.log(days, hours, minutes, seconds);
     // console.log(newYearsDate - currentDate);
@@ -30,3 +30,10 @@ console.log(days, hours, minutes, seconds);
 
 countDown();
  setInterval(countDown, 1000);
+
+
+// formateTime = (time) => time < 10 ? `0${time}`: time;
+
+function formateTime(time){
+    return time < 10 ? `0${time}` :time;
+}
